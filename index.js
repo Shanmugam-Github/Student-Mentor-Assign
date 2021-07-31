@@ -9,8 +9,8 @@ let mongoClient = mongodb.MongoClient;
 
 
 let st = "";
-let students = [{ "student_id": "1", "name": "Balaji", "mentor_id": "100" }, { "student_id": "2", "name": "Ganesh", "mentor_id": "101" }];
-let mentors = [{ "mentor_id": "100", "name": "Venkat", "student_ids": ["1"] }, { "mentor_id": "101", "name": "Ashik", "student_ids": ["2"] }];
+let students = [{ "student_id": "1", "name": "Shanmugam", "mentor_id": "100" }, { "student_id": "2", "name": "Muthu", "mentor_id": "101" }];
+let mentors = [{ "mentor_id": "100", "name": "Clinton", "student_ids": ["1"] }, { "mentor_id": "101", "name": "Aravindh", "student_ids": ["2"] }];
 app.get('/students', function (req, res) {
     
     res.status(200).json(students);
